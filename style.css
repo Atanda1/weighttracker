@@ -116,13 +116,7 @@
   }
   
  
-  .warning-icon {
-    display: none;
-    position: absolute;
-    top: 17px;
-    right: 25px;
-    align-items: center;
-  }
+ 
   
   .warning-message {
     display: none;

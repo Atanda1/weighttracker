@@ -40,7 +40,7 @@
     align-items: center;
   }
   
-  /* Pitch Copy */
+
   .pitch {
     color: #fff;
   }
@@ -55,7 +55,7 @@
     margin: 30px 0;
   }
   
-  /* Form */
+  
   .trial-offer {
     text-align: center;
     padding: 20px 60px;
@@ -115,7 +115,7 @@
     margin-bottom: 18px;
   }
   
-  /* Validatiton Error */
+ 
   .warning-icon {
     display: none;
     position: absolute;
@@ -145,7 +145,7 @@
     display: block;
   }
   
-  /* Disclaimer */
+  
   .disclaimer {
     text-align: center;
     font-size: 10px;
@@ -161,7 +161,7 @@
     font-weight: 700;
   }
   
-  /* Footer */
+ 
   footer {
     margin-top: 30px;
   }

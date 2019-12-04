@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <script>
+      window.onload = function(){
+        document.getElementById("submit-button").addEventListener("click", function(){
+          document.querySelectorAll("input").forEach(item => {
+            item.classList.add("submitted");
+            item.removeAttribute("placeholder");
+          })
+        })
+      }
+  </script>
+
+</head>
+<body>
+
+  <div class="content-wrapper">
+
+    <div class="pitch">
+      <h1>
+        Dear stomach, you're bored, not hungry. So shut up. 
+      </h1>
+
+      <p>
+        It’s true, isn’t it? You can blame your trainer, dietician, or even your family and friends for your weight gain. But at the end of the day, you have to take control of your life. If you do not adhere to the diet and exercise plan, even the best trainers and dieticians can do nothing about it. Learn to say “No” politely but firmly to your friends and family when they lure you into unhealthy habits. 
+
+      </p>
+    </div>
+
+    <div class="form-wrapper">
+      <div class="trial-offer">
+        <strong>Enjoy our free weight tracker during our 7 days trial</strong> 
+      </div>
+
+      <form id="trial-form" class="trial-form">
+        <div class="form-row">
+          <input
+            id="first-name"
+            name="first-name"
+            type="text"
+            placeholder=" Name"
+            class="form-input"
+            required
+          />
+          
+          <div class="warning-message">
+            First Name cannnot be empty
+          </div>
+        </div>
+
+        <div class="form-row">
+          <input
+            id="weight"
+            name="weight"
+            type="text"
+            placeholder="  Today's weight"
+            class="form-input"
+            required
+          />
+          
+          <div class="warning-message">
+            Today's weight
+          </div>
+        </div>
+
+        <div class="form-row">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Email Address"
+            class="form-input"
+            required
+          />
+         
+          <div class="warning-message">
+            Looks like this is not an email
+          </div>
+        </div>
+
+        <div class="form-row">
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Password"
+            class="form-input"
+            required
+          />
+          <div class="warning-message">
+            Looks like this is not a password
+          </div>
+          
+        </div>
+
+        <button id="submit-button" class="submit-button" type="submit">Register and start tracking</button>
+        
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Coded by <a href="https://devcareer.io/davidpreneur">Atanda David</a>.
+    </p>
+  </footer>
+</body>
+</html>
